@@ -11,3 +11,27 @@ datasource db {
   directUrl = env("POSTGRES_URL_NON_POOLING") // uses a direct connection
   shadowDatabaseUrl = env("POSTGRES_URL_NON_POOLING") // used for migrations
 }
+
+model Package {
+  id String @id @default(uuid())
+  title String
+  image1 String
+  image2 String
+  image3 String
+  image4 String
+  description String
+  price Float
+  tags String
+  specialists Specialist[]
+}
+
+model Specialist {
+  id String @id @default(uuid())
+  name String
+  image String
+  designation String
+  bio String
+
+  packageId String
+  package Package @relation(fields: [packageId], references: [id])
+}
