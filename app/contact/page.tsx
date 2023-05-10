@@ -1,10 +1,12 @@
+import Button from "@/components/Button";
+
 const ContactPage = () => {
   return (
     <div>
-      <h3 className="text-5xl mx-auto pt-10 text-center text-emerald-800">
+      <h3 className="text-5xl mx-auto pt-10 text-center text-emerald-700">
         Contact
       </h3>
-      <p className="text-center text-emerald-950">
+      <p className="text-center text-emerald-800">
         Get in touch with one of our team today
       </p>
 
@@ -72,15 +74,15 @@ const ContactPage = () => {
               name="message"
               placeholder="Write your message"
               required
-              className="message w-full p-4 outline-none text-gray-700  border border-gray-300 focus:border-gray-600 duration-300 resize-none h-[18.5rem]"
+              className="message w-full p-4 outline-none text-gray-700  border border-gray-300 focus:border-gray-600 duration-300 resize-none h-80"
             />
           </div>
-          <input
-            required
-            className="bg-emerald-950 hover:bg-emerald-800 text-white py-4 px-10 uppercase duration-300 cursor-pointer"
-            type="submit"
-            value="Submit"
-          />
+
+          <Button
+            href={`/packages/{id}`}
+            placeholder="Submit"
+            variant="organic"
+          ></Button>
         </div>
       </form>
     </div>
