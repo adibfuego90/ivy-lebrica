@@ -72,12 +72,12 @@ const ContactPage = () => {
               name="message"
               placeholder="Write your message"
               required
-              className="message w-full p-4 outline-none text-gray-700  border border-gray-300 focus:border-gray-600 duration-300 resize-none h-72"
+              className="message w-full p-4 outline-none text-gray-700  border border-gray-300 focus:border-gray-600 duration-300 resize-none h-[18.5rem]"
             />
           </div>
           <input
             required
-            className="bg-emerald-950 hover:bg-emerald-800 text-white py-5 px-10 uppercase duration-300 cursor-pointer"
+            className="bg-emerald-950 hover:bg-emerald-800 text-white py-4 px-10 uppercase duration-300 cursor-pointer"
             type="submit"
             value="Submit"
           />
