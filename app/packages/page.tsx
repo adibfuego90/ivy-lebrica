@@ -10,7 +10,7 @@ const PackagesPage = async () => {
 
   return (
     <div className="wrapper py-10">
-      <h2>Packages</h2>
+      <h2 className="text-2xl font-semibold">Packages</h2>
 
       <div className="flex flex-wrap gap-10 mt-10">
         {packages.map((pkg) => (
