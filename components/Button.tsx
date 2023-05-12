@@ -3,7 +3,7 @@ import clsx from "clsx";
 import Link from "next/link";
 import { FC } from "react";
 
-const buttonVariants = cva("rounded-lg transition-colors duration-300", {
+export const buttonVariants = cva("rounded-lg transition-colors duration-300", {
   variants: {
     variant: {
       default: "bg-black text-white hover:bg-gray-700",
