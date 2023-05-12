@@ -1,7 +1,7 @@
 "use client";
-import * as React from "react";
+
 import { Formik, Field, Form, FormikHelpers } from "formik";
-import Button from "@/components/Button";
+import PureButton from "@/components/PureButton";
 
 interface Values {
   firstName: string;
@@ -114,11 +114,7 @@ const ContactPage = () => {
               />
             </div>
 
-            <Button
-              href={`/packages/{id}`}
-              placeholder="Submit"
-              variant="organic"
-            ></Button>
+            <PureButton type="submit" placeholder="Submit" />
           </div>
         </Form>
       </Formik>
