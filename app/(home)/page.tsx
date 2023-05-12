@@ -1,11 +1,10 @@
-import PackagesPage from "../packages/page";
+import Hero from "@/components/Hero";
 
 const HomePage = () => {
   return (
-    <div>
-      {/* @ts-expect-error Server Component */}
-      <PackagesPage />
-    </div>
+    <>
+      <Hero />
+    </>
   );
 };
 

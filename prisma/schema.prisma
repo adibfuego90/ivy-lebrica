@@ -22,6 +22,7 @@ model Package {
   description String
   price Float
   tags String
+  
   specialists Specialist[]
 }
 

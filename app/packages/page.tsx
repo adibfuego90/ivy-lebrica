@@ -9,24 +9,16 @@ const PackagesPage = async () => {
   });
 
   return (
-    <div className="wrapper py-10">
-      <h2 className="text-2xl font-semibold">Packages</h2>
+    <section>
+      {/* SECTION TITLE GOES HERE*/}
 
-      <div className="flex flex-wrap gap-10 mt-10">
+      {/* PACKAGES WRAPPER*/}
+      <div>
         {packages.map((pkg) => (
-          <PackageItem
-            key={pkg.id}
-            id={pkg.id}
-            image={pkg.image1}
-            title={pkg.title}
-            description={pkg.description}
-            tags={pkg.tags}
-            price={pkg.price}
-            specialists={pkg.specialists}
-          />
+          <PackageItem key={pkg.id} />
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -6,7 +6,15 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        slate: "#313e48",
+        salmon: "#dcc5b7",
+        darksalmon: "#584f49",
+        brown: "#ac7e65",
+        darkbrown: "#402020",
+      },
+    },
   },
   plugins: [],
 };

@@ -1,18 +1,13 @@
+import { FC } from "react";
+import Link from "next/link";
 import { cva, VariantProps } from "class-variance-authority";
 import clsx from "clsx";
-import Link from "next/link";
-import { FC } from "react";
 
-export const buttonVariants = cva("rounded-lg transition-colors duration-300", {
+export const buttonVariants = cva("transition-colors duration-300", {
   variants: {
     variant: {
-      default: "bg-black text-white hover:bg-gray-700",
-      bordered:
-        "bg-transparent text-black border border-black hover:bg-black hover:text-white",
-      pinkish:
-        "bg-gradient-to-tr from-rose-600 to-pink-500 text-white hover:shadow-lg hover:shadow-rose-200",
-      organic:
-        "bg-gradient-to-tr from-emerald-600 to-emerald-500 text-white hover:shadow-lg hover:shadow-emerald-200",
+      default:
+        "bg-salmon text-slate border border-transparent hover:bg-darksalmon hover:border-salmon hover:text-salmon",
     },
     size: {
       default: "py-3 px-6",
