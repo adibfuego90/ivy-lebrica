@@ -1,7 +1,7 @@
+import { FC } from "react";
+import Link from "next/link";
 import { cva, VariantProps } from "class-variance-authority";
 import clsx from "clsx";
-import Link from "next/link";
-import { FC } from "react";
 
 export const buttonVariants = cva("rounded-lg transition-colors duration-300", {
   variants: {

@@ -1,7 +1,7 @@
-import { VariantProps } from "class-variance-authority";
-import clsx from "clsx";
 import { FC } from "react";
 import { buttonVariants } from "./Button";
+import { VariantProps } from "class-variance-authority";
+import clsx from "clsx";
 
 interface ButtonProps extends VariantProps<typeof buttonVariants> {
   placeholder: string;

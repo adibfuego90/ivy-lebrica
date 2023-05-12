@@ -1,12 +1,5 @@
-import PackagesPage from "../packages/page";
-
 const HomePage = () => {
-  return (
-    <div>
-      {/* @ts-expect-error Server Component */}
-      <PackagesPage />
-    </div>
-  );
+  return <div>HomePage</div>;
 };
 
 export default HomePage;
