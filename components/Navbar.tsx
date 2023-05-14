@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <header className="h-20 border-b border-darksalmon flex items-center uppercase">
       <nav className="wrapper flex justify-between items-center">
-        <Link href="/">Ivy Febrica.</Link>
+        <Link href="/">Ivy Lebrica.</Link>
 
         <div className="flex gap-5">
           <Link href="/">Home</Link>
