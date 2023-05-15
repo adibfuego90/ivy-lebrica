@@ -52,3 +52,55 @@
   grid-row: 10 / span 1;
   grid-column: 5 / span 1;
 }
+.image {
+  filter: saturate(0) brightness(0.5);
+  transition: all 1s;
+}
+.image:hover {
+  filter: saturate(1) brightness(1);
+  transform: scale(1.02);
+}
+.gallery {
+  display: grid;
+  gap: 5rem;
+  grid-template-areas:
+    "g1 g1 g2 g2"
+    "g3 g3 g2 g2"
+    "g5 g5 g4 g4"
+    "g7 g7 g6 g6"
+    "g8 g8 g9 g9"
+    "g8 g8 gl gl";
+}
+.image:nth-child(1) {
+  grid-area: g1;
+}
+.image:nth-child(2) {
+  grid-area: g2;
+}
+.image:nth-child(3) {
+  grid-area: g3;
+}
+.image:nth-child(4) {
+  grid-area: g4;
+}
+.image:nth-child(5) {
+  grid-area: g5;
+}
+.image:nth-child(6) {
+  grid-area: g6;
+}
+.image:nth-child(7) {
+  grid-area: g7;
+}
+.image:nth-child(8) {
+  grid-area: g8;
+}
+.image:nth-child(9) {
+  grid-area: g9;
+}
+.image:nth-child(10) {
+  grid-area: gl;
+}
+.imgSize {
+  @apply w-full h-full object-cover overflow-hidden;
+}
